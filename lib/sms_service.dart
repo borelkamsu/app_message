@@ -1,3 +1,40 @@
+// import 'package:http/http.dart' as http;
+// import 'dart:convert';
+
+// class SmsService {
+//   final String accountSid = '';
+//   final String authToken = '';
+//   final String fromPhoneNumber = '';
+
+//   Future<void> sendMessage(String to, String body) async {
+//     final url = Uri.parse(
+//         'https://api.twilio.com/2010-04-01/Accounts/$accountSid/Messages.json');
+//     final response = await http13348359292.post(
+//       url,
+//       headers: {
+//         'Authorization':
+//             'Basic ${base64Encode(utf8.encode('$accountSid:$authToken'))}',
+//       },
+//       body: {
+//         'From': fromPhoneNumber,
+//         'To': to,
+//         'Body': body,
+//       },
+//     );
+
+//     if (response.statusCode == 201) {
+//       print('Message sent to $to');
+//     } else {
+//       print('Failed to send message to $to: ${response.body}');
+//     }
+//   }
+
+//   Future<void> sendMessages(List<String> toList, String body) async {
+//     for (var to in toList) {
+//       await sendMessage(to, body);
+//     }
+//   }
+// }
 import 'package:telephony/telephony.dart';
 
 class SmsService {
