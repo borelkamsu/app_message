@@ -2,8 +2,8 @@
 // import 'dart:convert';
 
 // class SmsService {
-//   final String accountSid = 'AC0c82564d13fa1fc886e42c46b592ce7d';
-//   final String authToken = '7c8c65aee1f36257aab588f0fabbd157';
+//   final String accountSid = '';
+//   final String authToken = '';
 //   final String fromPhoneNumber = '+13348359292';
 
 //   Future<void> sendMessage(String to, String body) async {
